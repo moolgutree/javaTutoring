@@ -1,0 +1,23 @@
+// 너비와 높이를 입력받아 사각형의 넓이를 제공하는 getArea()메소드를 가진 Rectangle 클래스 생성 ( 너비 : 5  |  높이 : 4 )
+import java.util.Scanner;
+class Ractangle {
+  int R, L; 
+  int getArea() {
+    return R*L;
+  }
+
+}
+
+public class Main {  
+  public static void main(String args[]) { 
+    Ractangle rac = new Ractangle();
+    Scanner scn1 = new Scanner(System.in);
+    System.out.println("너비를 입력하세요 :");
+    rac.R = scn1.nextInt();
+    Scanner scn2 = new Scanner(System.in);
+    System.out.println("높이를 입력하세요 :");
+    rac.L = scn2.nextInt();
+
+    System.out.println(rac.getArea());
+  } 
+}
