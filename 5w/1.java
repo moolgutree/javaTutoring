@@ -16,6 +16,5 @@ class BallPen extends A{
 }
 
 class FountainPen extends BallPen{  
-  public coid setAmount(int amount) { this.amount = n; }
-  public void refill(int n) { amount = n; }
+  public void refill(int n) { setAmount(n); }
 }
